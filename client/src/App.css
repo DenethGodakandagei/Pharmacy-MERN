@@ -1,0 +1,39 @@
+body{
+  background-image: url("../src/assets/background.svg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-color: rgba(255, 255, 255, 0.5);
+  background-blend-mode: overlay;
+}
+input,
+select {
+  border-radius: 0 0.5rem 0.5rem 0;
+  flex: 1;
+  appearance: none;
+  border: 1px solid #d1d5db;
+  width: 100%;
+  padding: 0.5rem 1rem;
+  background-color: #fff;
+  color: #4b5563;
+
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-size: 1rem;
+  outline: none;
+}
+
+input:focus,
+select:focus {
+  outline: 2px solid #9333ea;
+  outline-offset: 2px;
+  border-color: transparent;
+  box-shadow: 0 0 0 3px rgba(147, 51, 234, 0.5);
+}
+
+input.input-error,
+select.input-error {
+  border-color: rgb(198, 30, 30);
+}
+input[type="file"] {
+  display: none;
+}
